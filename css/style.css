@@ -186,20 +186,23 @@ body {
 /*All Section*/
 .about,
 .goods,
+.pre-order,
 .contact {
   padding: 8rem 7% 1.4rem;
 }
 
 .about h2,
 .goods h2,
+.pre-order h2,
 .contact h2 {
   font-size: 2.6rem;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .about h2 span,
 .goods h2 span,
+.pre-order h2 span,
 .contact span {
   color: var(--primary);
 }
@@ -241,17 +244,13 @@ body {
 }
 
 .goods p,
+.pre-order p,
 .contact p {
   text-align: center;
   max-width: 30rem;
   margin: auto;
   font-weight: 200;
   line-height: 1.6;
-}
-
-.goods h2,
-.contact h2 {
-  margin-bottom: 1rem;
 }
 
 .goods .row {
@@ -303,6 +302,102 @@ body {
 .things-card-title6 span {
   color: var(--primary);
 }
+/* Goods section end */
+
+/* Item-PO-start */
+.pre-order .row-pre-order {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+.item-card {
+  text-align: center;
+  border: 1px solid #666;
+  padding: 2rem;
+}
+
+.item-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.item-icons a {
+  width: 4rem;
+  color: #fff;
+  height: 4rem;
+  margin: 0.3rem;
+  border: 1px solid #666;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-icons a:hover {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.item-image {
+  padding: 1rem 0;
+}
+
+.item-image .img1 {
+  width: 25rem;
+  height: 25rem;
+}
+
+.item-content h3 {
+  font-size: 32px;
+}
+
+.item-stars-1,
+.item-stars-2,
+.item-stars-3,
+.item-stars-4 {
+  font-size: 1.7rem;
+  padding: 0.8rem;
+  color: var(--primary);
+}
+
+.item-stars-1 .star-1,
+.item-stars-1 .star-2,
+.item-stars-1 .star-3,
+.item-stars-1 .star-4,
+/* % */
+.item-stars-2 .star-1,
+.item-stars-2 .star-2,
+.item-stars-2 .star-3,
+.item-stars-2 .star-4,
+.item-stars-2 .star-5,
+/* % */
+.item-stars-3 .star-1, 
+.item-stars-3 .star-2, 
+.item-stars-3 .star-3, 
+.item-stars-3 .star-4,
+/* % */
+.item-stars-4 .star-1, 
+.item-stars-4 .star-2, 
+.item-stars-4 .star-3, 
+.item-stars-4 .star-4 {
+  fill: var(--primary);
+}
+
+.item-price {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.item-price span {
+  text-decoration: line-through;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+/* Contact section */
 
 .contact .row {
   display: flex;
@@ -482,5 +577,99 @@ footer .credit a {
 @media (max-width: 450px) {
   html {
     font-size: 55%;
+  }
+  .pre-order .row-pre-order {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .item-card {
+    text-align: center;
+    border: 1px solid #666;
+    padding: 2rem;
+  }
+
+  .item-icons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .item-icons a {
+    color: #fff;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.15rem;
+    border: 1px solid #666;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item-icons a:hover {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+  }
+
+  .item-image {
+    padding: 1rem 0;
+  }
+
+  .item-image .img1 {
+    width: 12.5rem;
+    height: 12.5rem;
+  }
+
+  .item-content h3 {
+    font-size: 10px;
+  }
+
+  .item-stars-1,
+  .item-stars-2,
+  .item-stars-3,
+  .item-stars-4 {
+    font-size: 0.5rem;
+    padding: 0.4rem;
+    color: var(--primary);
+  }
+
+  .item-stars-1 .star-1,
+.item-stars-1 .star-2,
+.item-stars-1 .star-3,
+.item-stars-1 .star-4,
+.item-stars-1 .star-4,
+/* % */
+.item-stars-2 .star-1,
+.item-stars-2 .star-2,
+.item-stars-2 .star-3,
+.item-stars-2 .star-4,
+.item-stars-2 .star-5,
+/* % */
+.item-stars-3 .star-1, 
+.item-stars-3 .star-2, 
+.item-stars-3 .star-3, 
+.item-stars-3 .star-4,
+.item-stars-3 .star-5,
+/* % */
+.item-stars-4 .star-1, 
+.item-stars-4 .star-2, 
+.item-stars-4 .star-3, 
+.item-stars-4 .star-4, 
+.item-stars-4 .star-5 {
+    width: 8px;
+    height: 8px;
+  }
+
+  .item-price {
+    font-size: 0.65rem;
+    font-weight: bold;
+  }
+
+  .item-price span {
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 0.5rem;
   }
 }
