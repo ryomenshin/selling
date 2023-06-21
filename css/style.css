@@ -264,7 +264,9 @@ body {
 .things-card1,
 .things-card2,
 .things-card3,
-.things-card4 {
+.things-card4,
+.things-card5,
+.things-card6 {
   text-align: center;
   padding-right: 1.3rem;
   padding-left: 1.3rem;
@@ -284,15 +286,22 @@ body {
   margin: 1rem auto 0.5rem;
 }
 
-.things-card-title1 span {
-  color: var(--primary);
-}
-
 .things-card1 .things-card-price1,
 .things-card2 .things-card-price2,
 .things-card3 .things-card-price3,
-.things-card4 .things-card-price4 {
+.things-card4 .things-card-price4,
+.things-card5 .things-card-price5,
+.things-card6 .things-card-price6 {
   font-weight: 250;
+}
+
+.things-card-title1 span,
+.things-card-title2 span,
+.things-card-title3 span,
+.things-card-title4 span,
+.things-card-title5 span,
+.things-card-title6 span {
+  color: var(--primary);
 }
 
 .contact .row {
