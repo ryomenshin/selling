@@ -1,3 +1,23 @@
+// Alert
+
+//?var again = true;
+
+//while (again === true) {
+//var nama = prompt("Insert your namee");
+//alert("Hello " + nama);
+//again = confirm("try again");
+
+//?}
+
+var number = prompt("Insert number");
+if (number % 2 === 0) {
+  alert(number + " is even number");
+} else if (number % 2 === 1) {
+  alert(number + " is odd number");
+} else {
+  alert(number + " is not a number");
+}
+
 // Var
 const navbarNav = document.querySelector(".navbar-nav");
 const shoppingBag = document.querySelector(".shopping-bag");
@@ -37,3 +57,26 @@ document.addEventListener("click", function (e) {
     shoppingBag.classList.remove("active");
   }
 });
+
+function isoscelesTriangle(line) {
+  var maxLength = line + (line - 1);
+  var pattern = "";
+
+  for (var a = 1; a <= line; a = a + 1) {
+    var nStars = a + (a - 1);
+    var numSpaces = (maxLength - nStars) / 2;
+    // Spaces
+    for (var c = 1; c <= numSpaces; c++) {
+      pattern += " ";
+    }
+    // Stars
+    for (var b = 1; b <= nStars; b++) {
+      pattern += "*";
+    }
+    pattern += "\n";
+  }
+
+  return pattern;
+}
+
+console.log(isoscelesTriangle(3));
