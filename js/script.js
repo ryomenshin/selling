@@ -9,14 +9,14 @@
 
 //?}
 
-var number = prompt("Insert number");
-if (number % 2 === 0) {
-  alert(number + " is even number");
-} else if (number % 2 === 1) {
-  alert(number + " is odd number");
-} else {
-  alert(number + " is not a number");
-}
+// var number = prompt("Insert number");
+// if (number % 2 === 0) {
+  // alert(number + " is even number");
+// } else if (number % 2 === 1) {
+  // alert(number + " is odd number");
+// } else {
+  // alert(number + " is not a number");
+// }
 
 // Var
 const navbarNav = document.querySelector(".navbar-nav");
